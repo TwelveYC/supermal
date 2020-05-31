@@ -6,8 +6,8 @@
       <div class="center"> 
           <slot name="center"></slot>
       </div>
-      <div class="left">
-          <slot name="left">
+      <div class="right">
+          <slot name="right">
 
           </slot>
       </div>
@@ -20,7 +20,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .nav-bar{
     display: flex;
     box-shadow: 0 1 1 rgba(100, 100, 100, 0.5);
@@ -31,7 +31,6 @@ export default {
 }
 .right{
     width: 60px;
-    background: greenyellow;
 }
 .center{
     flex: 1;
